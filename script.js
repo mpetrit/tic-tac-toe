@@ -130,7 +130,7 @@ function displayController(name1,name2){
     }   
     return {updateScreen, resetGame:game.resetGame}
 }
-const gettingEvents=()=>{
+const gettingEvents=(function(){
     
     const firstPlayer=document.getElementById("first-player-name")
     const secondPlayer=document.getElementById("second-player-name")
@@ -160,5 +160,4 @@ const gettingEvents=()=>{
         displayControllerInstance.updateScreen()
     })
     
-}
-gettingEvents()
+})()
