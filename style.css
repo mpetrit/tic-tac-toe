@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;  
+    border-radius: 0px 0px 25px 25px;
+    padding: 25px;
+    box-shadow: 2px 2px rgb(206, 205, 205);
+    background-color: rgb(235, 233, 233);
+}
+.board-container{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    gap: 5px;
+}
+
+ .button-board{
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    font-size: 2rem;
+    font-weight: 100;
+} 
+.button-board:hover{
+    background-color: rgb(209, 209, 209);
+} 
+.user-button{
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 1rem;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: white;
+}
+.user-button:hover{
+    background-color: rgb(209, 209, 209);
+    border: 1px solid white;
+}
+
+.user-input{
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+}
+.player-input{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    
+}
+.player-input input {
+    font-size: 1.2rem;
+}
+
+
+.user-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border: 1px solid;
+    padding:25px;
+    border-radius: 12px;
+}
+
